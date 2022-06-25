@@ -4,6 +4,4 @@ nbconvert==6.5.0
 pathspec==0.7.0
 pipe==1.6.0
 proglog==0.1.9
-protobuf==3.20.1
-tensorflow==2.8.0rc0
 yfinance==0.1.72
