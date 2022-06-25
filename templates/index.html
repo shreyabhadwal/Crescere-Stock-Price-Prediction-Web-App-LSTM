@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = 'viewport' content = "with = device-width, intial-scale = 1.0">
+        <title>Stock Forecasting Web Application</title>
+        <link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <section class = 'header'>
+            <nav>
+                <a href="index.html"> <img src = "{{ url_for('static', filename='Images/Logo.png')}}" </a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Microsoft</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        <div class="text-box">
+            <h1>Forecasting Stock Prices</h1>
+            <p>
+                Helping you make the best investement choices using AI
+            </p>
+            <a href="" class="hero-btn">Know More About What We Do</a>
+        </div>
+        </section>
+
+        <!---- About Us ---->
+        <section class="about">
+            <h1>About Us</h1>
+            <p> <br> Have you ever been confused on what stock to buy and when? <br> 
+                Don't worry, we've all been there! <br> <br>
+                However, with the amount of data and advance AI available today, 
+                you don't have to be uncertain anymore. <br>
+                You can know exactly when to invest and where to invest. <br>
+                How you ask? <br> <br>
+                Through a class of deep neural networks called LTSM (Long Term Short Memory)! <br>
+                Through this website, you'll be able to see  certain stocks and their 
+                predicted closing prices in the coming 30 days. <br> <br>
+                Beaware, ML models carry certain risk with them. <br> 
+
+    
+            </p>
+
+        </section>
+
+        <!--Microsoft-->
+        <section class="microsoft">
+            <h1>Microsoft Corporation (MSFT)</h1>
+            <sub> NASDAQ <br> 
+                Currency in USD </sub> <br> <br> <br>
+            <body>
+                <form action="/predict" method="post">
+                <label for="start">Stock Price on Date</label>
+                <input style="font-size: 18px" type="date" id="start" name="start" 
+                 value="2022-06-20"
+                 min="2022-06-25" max="2022-07-20">
+
+                 <button type="submit" class = "pred_but">Predict</button>
+                </form>
+                <br>
+                <br>
+                <p class = "pred"> {{pred}} </p> <br>
+            </body>
+            <img src="{{ url_for('static', filename='Images/plot.png')}}" alt="my plot" class = 'Plot' >
+            <sub><br><br><br>The End</sub>
+        </section>
+
+    </body>
+</html>
