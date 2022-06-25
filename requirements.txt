@@ -1,14 +1,6 @@
-aiohttp @ file:///C:/ci/aiohttp_1646806545879/work
-aiosignal @ file:///tmp/build/80754af9/aiosignal_1637843061372/work
-alabaster @ file:///home/ktietz/src/ci/alabaster_1611921544520/work
 alembic==1.7.7
 appdirs==1.4.4
-argon2-cffi @ file:///opt/conda/conda-bld/argon2-cffi_1645000214183/work
-argon2-cffi-bindings @ file:///C:/ci/argon2-cffi-bindings_1644569878360/work
-arrow @ file:///opt/conda/conda-bld/arrow_1649166651673/work
 astor==0.8.1
-astroid @ file:///C:/ci/astroid_1628063293445/work
-asttokens @ file:///opt/conda/conda-bld/asttokens_1646925590279/work
 astunparse==1.6.3
 async-timeout @ file:///tmp/build/80754af9/async-timeout_1637851218186/work
 atomicwrites==1.4.0
