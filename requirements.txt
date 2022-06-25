@@ -49,7 +49,6 @@ PyYAML==6.0
 requests-oauthlib==1.3.0
 ruamel.yaml==0.17.21
 ruamel.yaml.clib==0.2.6
-sip==4.19.13
 soupsieve==2.3.2.post1
 SQLAlchemy==1.4.36
 tensorboard-plugin-wit==1.6.0
